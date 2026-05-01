@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Smoke Machine - EPK</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  background:#0a0a0a;
+  color:#fff;
+  font-family:sans-serif;
+}
+
+/* HERO PARALLAX */
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:2rem;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.9)),
+    url('bg.jpg') center/cover no-repeat;
+
+  background-attachment: fixed;
+}
+
+.hero img{
+  width:100%;
+  max-width:500px;
+  animation:float 4s infinite ease-in-out;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+
+.hero-sub{
+  margin-top:1rem;
+  letter-spacing:.3em;
+  color:#aaa;
+}
+
+.btn{
+  margin-top:2rem;
+  padding:1rem 2rem;
+  background:#c8b89a;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:4px;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#e8d5b0;
+}
+
+/* SEÇÕES */
+section{
+  padding:3rem 2rem;
+  max-width:1000px;
+  margin:auto;
+  background:rgba(0,0,0,0.85);
+  border-radius:8px;
+  margin-top:2rem;
+}
+
+h2{
+  margin-bottom:1.5rem;
+  color:#e8d5b0;
+}
+
+/* BIO */
+.bio{
+  line-height:1.7;
+  color:#bbb;
+}
+
+/* STATS */
+.stats{
+  display:flex;
+  gap:1rem;
+  margin-top:2rem;
+  flex-wrap:wrap;
+}
+
+.stat{
+  background:#111;
+  padding:1rem;
+  flex:1;
+  text-align:center;
+  border-radius:6px;
+}
+
+/* SPOTIFY */
+iframe{
+  width:100%;
+  height:380px;
+  border-radius:12px;
+}
+
+/* FOTOS */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:10px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:8px;
+}
+
+/* LOGOS */
+.logos{
+  display:flex;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+.logo-card{
+  background:#111;
+  padding:1rem;
+  text-align:center;
+  border-radius:6px;
+}
+
+/* WHATS */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:12px 16px;
+  border-radius:50px;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="LOGO-EPK.png">
+  <div class="hero-sub">STONΞR ROCK • Aracaju • Brasil</div>
+  <a class="btn" href="https://w.app/z2mipg">ENTRAR EM CONTATO</a>
+</div>
+
+<!-- BIO -->
+<section>
+  <h2>Release</h2>
+  <p class="bio">
+    Formada em 2013 em Aracaju, a Black Smoke Machine é uma banda de stoner rock
+    que mistura riffs pesados, letras críticas e presença de palco intensa.
+  </p>
+
+  <div class="stats">
+    <div class="stat">+10 anos</div>
+    <div class="stat">Shows ao vivo</div>
+    <div class="stat">EP + Singles</div>
+  </div>
+</section>
+
+<!-- SPOTIFY -->
+<section>
+  <h2>Música</h2>
+  <iframe src="https://open.spotify.com/embed/artist/1PpHVjjVWPSb24rpfiRcF8"></iframe>
+</section>
+
+<!-- FOTOS -->
+<section>
+  <h2>Fotos</h2>
+  <div class="gallery">
+    <img src="BSM-5.jpg">
+    <img src="foto2.jpg">
+    <img src="foto3.jpg">
+  </div>
+</section>
+
+<!-- LOGOS -->
+<section>
+  <h2>Logos para Download</h2>
+  <div class="logos">
+    <div class="logo-card">
+      <img src="LOGO-EPK.png" width="150"><br>
+      <a href="LOGO-EPK.png" download>Baixar</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section>
+  <h2>Contato</h2>
+  <p>Email: contato@seudominio.com</p>
+  <p>WhatsApp: 79 8819-7077</p>
+</section>
+
+<a class="whatsapp" href="https://w.app/z2mipg">WhatsApp</a>
+
+</body>
+</html>
